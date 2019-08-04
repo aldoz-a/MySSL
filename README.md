@@ -1,7 +1,7 @@
 # MySSL 
 
-A user-friedly interface to the OpenSSL library
-=======================================================
+A user-friendly interface to the OpenSSL library
+================================================
 
 Overview
 --------
@@ -42,7 +42,7 @@ Installation
 ------------
 
 This is currently a beta version, so uses a very simple Makefile and to generate 
-and test the SSL library you need to do some manual steps:
+and test the MySSL library you need to do some manual steps:
 
 1. go to the src directory and generate the library with "make clean && make". 
    This generates a shared-library (libmyssl.so) and copies it to the tests/lib 
@@ -58,8 +58,8 @@ and test the SSL library you need to do some manual steps:
 
    export LD_LIBRARY_PATH="~/path-of-myssl-package/tests/lib"
 
-The next version of the MySSL library shall use Autotools to generate and install
-automatically and making the package portable to many Unix-like systems.
+The next version of the MySSL library will use Autotools to generate and install
+automatically and to make the package portable to many Unix-like systems.
 
 
 Documentation
@@ -74,7 +74,7 @@ Testing
 Two tests are provided in *tests/server* and *tests/client* directories, you 
 can freely edit the source code to fit your needs (it's Free Software :).
 
-The two test programs are a SSL Server and a SSL Client that use the MYSSL 
+The two test programs are a SSL Server and a SSL Client that use the MySSL 
 library and, in addition to testing the library, they can serve as an example
 of how to write code using the MySSL library. 
 
