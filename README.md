@@ -1,4 +1,5 @@
-MySSL - a user-friedly interface to the OpenSSL library
+#MySSL 
+A user-friedly interface to the OpenSSL library
 =======================================================
 
 Overview
@@ -72,9 +73,9 @@ Testing
 Two tests are provided in *tests/server* and *tests/client* directories, you 
 can freely edit the source code to fit your needs (it's Free Software :).
 
-The two test programs are a server and a client that use the MYSSL library and, 
-in addition to testing the library, they can serve as an example of writing 
-code using the MySSL library. 
+The two test programs are a SSL Server and a SSL Client that use the MYSSL 
+library and, in addition to testing the library, they can serve as an example
+of how to write code using the MySSL library. 
 
 The two test directories provide basic (and working) examples of the SSL 
 certificates used by the MySSL library to work.
