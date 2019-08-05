@@ -41,7 +41,7 @@ Notes
 Installation
 ------------
 
-This is currently a beta version, so uses a very simple Makefile and to generate 
+This is currently a beta version, and uses a very simple Makefile: so to generate 
 and test the MySSL library you need to do some manual steps:
 
 1. go to the src directory and generate the library with "make clean && make". 
