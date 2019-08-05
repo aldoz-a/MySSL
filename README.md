@@ -37,6 +37,8 @@ Notes
 
 - The library "OpenSSL" reference version is 1.0.2g
 
+- Currently the MySSL library only supports Linux systems.
+
 
 Installation
 ------------
@@ -62,12 +64,6 @@ The next version of the MySSL library will use Autotools to generate and install
 automatically and to make the package portable to many Unix-like systems.
 
 
-Documentation
--------------
-
-TODO
-
-
 Testing
 -------
 
@@ -86,3 +82,9 @@ shells open in the directories tests/server and tests/client:
 
 1. ./sslserver 8888
 2. ./sslclient 127.0.0.1 8888
+
+TODO list
+---------
+
+- documentation
+- Windows support
