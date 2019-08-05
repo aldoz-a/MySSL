@@ -46,21 +46,21 @@ Installation
 This is currently a beta version, and uses a very simple Makefile: so to generate 
 and test the MySSL library you need to do some manual steps:
 
-1. go to the src directory and generate the library with "make clean && make". 
+1. Go to the src directory and generate the library with "make clean && make". 
    This generates a shared-library (libmyssl.so) and copies it to the tests/lib 
    directory. The header file myssl.h is also copied to the tests/include 
    directory.
-2. position yourself in the tests directory and generate the two test programs 
+2. Position yourself in the tests directory and generate the two test programs 
    (sslserver and sslclient) with "make clean && make".
-3. see the "Testing" paragraph of this file to see how to execute a simple test 
+3. See the "Testing" paragraph of this file to see how to execute a simple test 
    of the MySSL library using two terminals.
-4. note that in this beta version the library is not installed automatically, so 
+4. Note that in this beta version the library is not installed automatically, so 
    to perform the test you can install the libmyssl.so in the system or you can 
    do a temporary installation in both two terminals in this way:
 
    export LD_LIBRARY_PATH="~/path-of-myssl-package/tests/lib"
 
-The next version of the MySSL library will use Autotools to generate and install
+The next version of the MySSL library will use Autotools to build and install
 automatically and to make the package portable to many Unix-like systems.
 
 
@@ -86,5 +86,6 @@ shells open in the directories tests/server and tests/client:
 TODO list
 ---------
 
-- documentation
+- Build and Install using Autotools
+- Documentation
 - Windows support
