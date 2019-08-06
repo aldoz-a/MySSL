@@ -9,8 +9,6 @@ Overview
 The MySSL library is a simple interface to OpenSSL library to permits 
 user-friendly writing (in C or C++) of SSL Servers and SSL Clients.
 
-Copyright © 2019 Aldo Abate <aldo.abate99@gmail.com>
-
 
 Notes
 -----
