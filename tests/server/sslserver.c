@@ -15,6 +15,7 @@
 #include "myssl.h"
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 #include <errno.h>
 #include <arpa/inet.h>
 #include <openssl/err.h>
@@ -121,8 +122,8 @@ int main(int argc, char *argv[])
     while ((recv_size = sslRead(ssl, client_msg, MYBUFSIZE)) > 0 ) {
         // send answer to client
         printf("received message from sock %d: %s\n", client_sock, client_msg);
-        char server_msg[MYBUFSIZE];
-        sprintf(server_msg, "you wrote to me: %s", client_msg);
+        char server_msg[MYBUFSIZE + 18];
+        snprintf(server_msg, sizeof(server_msg), "you wrote to me: %s", client_msg);
         if (sslWrite(ssl, server_msg, strlen(server_msg)) < 0) {
             // sslWrite() error
             fprintf(stderr, "%s: send failed (%d)\n", argv[0], SSL_get_error(ssl, recv_size));

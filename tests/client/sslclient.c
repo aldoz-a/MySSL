@@ -15,6 +15,7 @@
 #include "myssl.h"
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 #include <errno.h>
 #include <arpa/inet.h>
 #include <openssl/err.h>
